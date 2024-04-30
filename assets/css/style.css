@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    letter-spacing: -0.5px;
+  }
+
+body {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  }
+
+/* Logo */
+
+.logo img {
+  position: absolute;
+  width: 180px;
+  margin: 20px;
+  top: 13px;
+  left: 20px;
+}
+
+/* Streak counter */
+
+.streakContainer {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.topStreak {
+  font-size: 20px;
+  font-family: 'benton-sans';
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 7px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+/* Content Container */
+
+.container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15vh 5vh 5vh 5vh;
+}
+
+.title {
+  font-size: 28px;
+  font-family: 'benton-sans';
+  margin: 4vh 0;
+}
+
+.questionBox {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.answerBox {
+  font-size: 28px;
+  margin: 6vh;
+}
+
+.displayAnswerBox {
+  font-size: 28px;
+  margin: -6vh;
+}
+
+
+.streak {
+  position: absolute;
+  top: 51%;
+  font-family: 'benton-sans';
+  font-size: 20px;
+  font-weight: 500;
+  margin: 4vh;
+}
+
+.keyStrokes {
+  text-align: center;
+  background: #333;
+  color: #eee;
+  border-radius: 0.3em;
+  margin: 0.2em;
+  padding: 0.4em;
+  width: 3.3em;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #444;
+  box-shadow: 0 0.2em 0 0.05em #222;
+  border-bottom-color: #555;
+  font-family: 'benton-sans';
+}
+
+/* Circle Count Down Timer */
+
+#countdown {
+  position: absolute;
+  margin: auto;
+  top: 62%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+#countdown-number {
+  display: inline-block;
+  line-height: 40px;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 113px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke: black;
+  fill: none;
+}
+
+.timerAnimation { 
+  animation: countdown 10.02s linear infinite forwards;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 113px;
+  }
+}
+
+.or {
+  font-size: 18px;
+  margin: 10px;
+}

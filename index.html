@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Excel Shortcut Game by Letter of Intent"/>
+    <meta property="og:image" content="<%= require('./assets/images/ogimage.png') %>" />
+    <title>Excel Shortcut Game</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+        
+        <!-- Logo -->
+        <a class="logo" href="https://www.letterofintent.com.au/"> 
+            <img src="./assets/images/LOIblacknobg.png" alt="logo">
+        </a>
+
+        <!-- Streak container -->
+        <div class="streakContainer">
+            <div class="topStreak" id="topBox">
+                Your top streak: <span id="topStreak">0 </span>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="container">
+
+            <div class="title" id="titleBox">
+                press enter to begin...
+            </div>
+
+            <div class="questionBox" id="questionBox"> </div>
+
+            <div class="answerBox" id="answerBox"> </div>
+
+            <div class="displayAnswerBox" id="displayAnswerBox"> </div>
+
+            <div class="streak" id="streakBox"> </div>
+
+            <div id="countdown"> </div>
+
+           
+
+        </div>
+
+    
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
